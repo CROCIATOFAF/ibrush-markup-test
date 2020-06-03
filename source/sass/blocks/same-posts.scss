@@ -1,0 +1,55 @@
+.same-posts {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 59px 15px 80px 15px;
+}
+
+.same-posts__title {
+  font-size: 28px;
+  line-height: 24px;
+  font-family: 'Consolas', Courier, monospace;
+  margin-bottom: 34px;
+}
+
+.same-posts__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.same-posts__item {
+  width: 30%;
+}
+
+.same-posts__img-text {
+  font-size: 18px;
+  line-height: 24px;
+  color: $second-text-color;
+  font-weight: 700;
+  font-family: 'Consolas', Courier, monospace;
+  margin-top: 11px;
+}
+
+.same-posts__item img {
+  width: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: $mobile-width) {
+  .same-posts {
+    padding: 28px 20px 60px 20px;
+  }
+
+  .same-posts__title {
+    font-size: 21px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+
+  .same-posts__img-text {
+    max-width: 280px;
+    text-align: left;
+    margin-top: 14px;
+  }
+}

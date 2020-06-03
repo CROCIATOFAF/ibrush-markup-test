@@ -1,0 +1,94 @@
+.quotes {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 50px 15px 54px 15px;
+}
+
+.quotes__title {
+  font-size: 28px;
+  line-height: 36px;
+  font-style: normal;
+  font-family: 'Consolas', Courier, monospace;
+  font-weight: 500;
+  margin-bottom: 27px;
+}
+
+.quotes__text {
+  font-size: 18px;
+  line-height: 24px;
+  font-style: italic;
+  margin-bottom: 25px;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/quotation-mark.svg");
+    width: 34px;
+    height: 34px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2;
+    left: -64px;
+    top: -3px;
+  }
+}
+
+.quotes__author {
+  font-size: 16px;
+  line-height: 24px;
+  color: $input-text-color;
+  font-style: italic;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.quotes__content-wrapper {
+  padding-left: 64px;
+}
+
+@media (max-width: $mobile-width) {
+  .quotes {
+    padding: 41px 20px 55px 20px;
+  }
+
+  .quotes__title {
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    margin-bottom: 22px;
+  }
+
+  .quotes__content-wrapper {
+    padding-left: 54px;
+  }
+
+  .quotes__text {
+    font-size: 18px;
+    line-height: 24px;
+    font-style: italic;
+    margin-bottom: 20px;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/quotation-mark.svg");
+      width: 34px;
+      height: 34px;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.2;
+      left: -54px;
+      top: -5px;
+    }
+  }
+
+  .quotes__author {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

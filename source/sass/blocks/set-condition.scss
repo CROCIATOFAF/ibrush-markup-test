@@ -1,0 +1,89 @@
+.set-condition {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin-left: -5px;
+}
+
+.set-condition__stars-container {
+  width: 160px;
+  height: 24px;
+  margin-bottom: 10px;
+  background-image: url("../img/star-hollow.svg");
+  background-size: 33px 24px;
+  background-repeat: repeat-x;
+  position: relative;
+  z-index: 0;
+}
+
+.set-condition__result-container {
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.set-condition__stars-container input {
+  @include visually-hidden;
+}
+
+.set-condition__stars-container label {
+  height: 24px;
+
+  background-size: 33px 24px;
+  background-repeat: repeat-x;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  cursor: pointer;
+}
+
+.set-condition__stars-container label:nth-of-type(1) {
+  width: 33px;
+  z-index: 5;
+}
+
+.set-condition__stars-container label:nth-of-type(2) {
+  width: 66px;
+  z-index: 4;
+}
+
+.set-condition__stars-container label:nth-of-type(3) {
+  width: 99px;
+  z-index: 3;
+}
+
+.set-condition__stars-container label:nth-of-type(4) {
+  width: 132px;
+  z-index: 2;
+}
+
+.set-condition__stars-container label:nth-of-type(5) {
+  width: 165px;
+  z-index: 1;
+}
+
+.set-condition__stars-container label:hover,
+.set-condition__stars-container input:checked + label {
+  background-image: url("../img/star-gold.svg");
+}
+
+.set-condition__stars-container label:hover ~ label {
+    background-image: url("../img/star-hollow.svg");
+}
+
+@media (max-width: $mobile-width) {
+  .set-condition__stars-container {
+    margin: 0;
+  }
+
+  .article-comment__add-comment-title {
+    margin-top: 23px;
+    margin-bottom: 17px;
+    font-size: 16px;
+  }
+}

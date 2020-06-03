@@ -1,0 +1,201 @@
+.article-comment {
+  background-color: $grey;
+  padding-top: 37px;
+  padding-bottom: 40px;
+}
+
+.article-comment__wrapper {
+  max-width: 768px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.article-comment__rate-title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: 'Consolas', Courier, monospace;
+  font-weight: 700;
+}
+
+.article-comment__add-comment-title {
+  margin-bottom: 18px;
+  margin-top: 27px;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: 'Consolas', Courier, monospace;
+  font-weight: 700;
+}
+
+.article-comment__form label {
+  width: 100%;
+  margin-right: 30px;
+  position: relative;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.article-comment__form span {
+  position: absolute;
+  top: 10px;
+  left: 22px;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: $input-text-color;
+}
+
+.article-comment__form input:focus ~ span,
+.article-comment__form input:hover ~ span,
+.article-comment__form input:active ~ span {
+  top: 2px;
+}
+
+.article-comment__form input {
+  width: 100%;
+  padding-left: 20px;
+  height: 44px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+  outline: none;
+  padding-top: 15px;
+
+
+  &:hover,
+  &:focus {
+    border: 1px solid $black;
+  }
+
+  &:active {
+    border: 1px solid $black;
+  }
+}
+
+.article-comment__form input::placeholder {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.article-comment__form input[id="email"]:focus,
+.article-comment__form input[id="email"]:hover {
+  position: relative;
+
+  &:after {
+    position: absolute;
+    left: 10px;
+    top: 2px;
+    content: attr(placeholder);
+    opacity: 0.7;
+    font-size: 10px;
+  }
+}
+
+.article-comment__form textarea {
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+  margin-top: 20px;
+  height: 100px;
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 20px;
+  resize: none;
+  display: block;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $black;
+  }
+
+  &:active {
+    border: 1px solid $black;
+  }
+}
+
+.article-comment__form select {
+  font-size: 14px;
+  line-height: 44px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: $input-text-color;
+}
+
+
+.article-comment__form-wrapper {
+  display: flex;
+}
+
+.article-comment__send-button {
+  font-family: 'Consolas', Courier, monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: $blue;
+  padding: 17px 50px;
+  border: 1px solid $blue;
+  outline: 0;
+  width: 226px;
+  height: 44px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    color: $blue;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+
+@media (max-width: $mobile-width) {
+  .article-comment {
+    padding-top: 0
+  }
+
+  .article-comment__wrapper {
+    padding: 36px 20px 0 20px;
+  }
+
+  .article-comment__form-wrapper {
+    flex-direction: column;
+  }
+
+  .article-comment__form input {
+    font-size: 14px;
+  }
+
+  .article-comment__form label {
+    margin-bottom: 14px;
+    margin-right: 0;
+  }
+
+  .article-comment__send-button {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .article-comment__rate-title {
+    font-size: 16px;
+  }
+
+  .article-comment__form textarea {
+    margin-top: 15px;
+    height: 120px;
+    padding-top: 11px;
+  }
+}

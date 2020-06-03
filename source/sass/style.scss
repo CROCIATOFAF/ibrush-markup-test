@@ -1,3 +1,18 @@
-h1 {
-  color: red;
-}
+@import "variables.scss";
+@import "mixins.scss";
+@import "content.scss";
+
+// blocks
+@import "blocks/header.scss";
+@import "blocks/quotes.scss";
+@import "blocks/conclusion.scss";
+@import "blocks/advertisement.scss";
+@import "blocks/article-comment.scss";
+@import "blocks/same-posts.scss";
+@import "blocks/set-condition.scss";
+@import "blocks/select-styles.scss";
+@import "blocks/swiper-slider.scss";
+@import "blocks/swiper-scroll.scss";
+
+// libs
+@import "libs/swiper.min.scss";

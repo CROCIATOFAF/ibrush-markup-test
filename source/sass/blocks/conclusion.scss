@@ -1,0 +1,38 @@
+.conclusion {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 21px 15px 73px 15px;
+}
+
+.conclusion__title {
+  font-size: 28px;
+  line-height: 36px;
+  font-family: 'Consolas', Courier, monospace;
+  font-weight: 500;
+  margin-bottom: 26px;
+}
+
+.conclusion__text {
+  font-size: 16px;
+  line-height: 24px;
+  color: $text-color;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: $mobile-width) {
+  .conclusion {
+    padding: 29px 20px 36px 20px;
+  }
+
+  .conclusion__title {
+    font-size: 21px;
+    line-height: 36px;
+    margin-bottom: 16px;
+  }
+
+  .conclusion__text {
+    font-size: 14px;
+    line-height: 18px;
+    padding-right: 0;
+  }
+}

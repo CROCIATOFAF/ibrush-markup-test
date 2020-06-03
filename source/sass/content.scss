@@ -1,0 +1,98 @@
+html {
+  color: $black;
+  box-sizing: border-box;
+}
+
+body {
+  @include no-marg-padd;
+  display: flex;
+  flex-direction: column;
+  background: $white;
+  -webkit-text-size-adjust: none;
+
+  min-width: 320px;
+}
+
+ul {
+  @include no-marg-padd;
+  list-style: none;
+}
+
+p {
+  @include no-marg-padd;
+}
+
+h1 {
+  color: $blue;
+  font-family: 'Consolas', Courier, monospace;
+}
+
+h2,
+h3,
+h4 {
+  @include no-marg-padd;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+textarea,
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="button"],
+input[type="submit"],
+input[type="url"],
+select {
+  -webkit-appearance: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+input[type="color"],
+input[type="psw"],
+input[type="email"],
+input[type="psw-repeat"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+select:focus,
+textarea {
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-appearance: none;
+
+}
+
+dl,
+dd,
+dt {
+  margin: 0;
+}
